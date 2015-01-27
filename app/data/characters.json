@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Data",
+    "race": "Android",
+    "homeworld": "Omicron Theta",
+    "image_url": "img/data.png"
+  },
+  {
+    "name": "William T. Riker",
+    "race": "Human",
+    "homeworld": "Earth",
+    "gender": "male",
+    "image_url": "img/riker.png"
+  },
+  {
+    "name": "Worf",
+    "race": "Klingon",
+    "homeworld": "Qo'noS",
+    "gender": "male",
+    "image_url": "img/worf.png"
+  },
+  {
+    "name": "Beverly Crusher",
+    "race": "Human",
+    "homeworld": "Earth's Moon",
+    "gender": "female",
+    "image_url": "img/crusher.png"
+  },
+  {
+    "name": "Geordi La Forge",
+    "race": "Human",
+    "homeworld": "Earth",
+    "gender": "male",
+    "image_url": "img/laforge.png"
+  },
+  {
+    "name": "Deanna Troi",
+    "race": "Human/Betazoid hybrid",
+    "homeworld": "Betazed",
+    "gender": "female",
+    "ability": "empathy",
+    "image_url": "img/troi.png"
+  },
+  {
+    "name": "Jean-Luc Picard",
+    "race": "Human",
+    "homeworld": "Earth",
+    "gender": "male",
+    "image_url": "img/picard.png"
+  }
+]

@@ -1,0 +1,43 @@
+<form>
+    <fieldset>
+        <legend>Filter</legend>
+
+        <div class="row">
+            <div class="large-6 columns">
+                <input type="radio" name="filter" value="race" id="filterRace" checked="checked" />
+                    <label for="filterRace">Race</label>
+                <br/>
+                <input type="radio" name="filter" value="homeworld" id="filterHomeworld" ng-model="search1" disabled />
+                    <label for="filterHomeworld">Homeworld</label>
+            </div>
+            <div class="large-6 columns">
+                <label>
+                    <input type="text" placeholder="Type here..." ng-model="search.race" />
+                </label>
+            </div>
+        </div>
+
+    </fieldset>
+</form>
+
+<form>
+    <fieldset>
+        <legend>Characters</legend>
+
+        <div class="row" ng-repeat="char in chars | filter:search">
+            <div class="large-2 columns text-center">
+                <img src="/data/{{char.image_url}}" />
+            </div>
+            <div class="large-8 columns">
+                <div>Name: {{char.name}}</div>
+                <div>Race: {{char.race}}</div>
+                <div>Homeworld: {{char.homeworld}}</div>
+            </div>
+            <div class="large-2 columns">
+                <a href="#" class="button small" ng-click="openPopup($index)">Quote</a>
+                <a href="#" class="button alert small" ng-click="removeChar($index)">Delete</a>
+            </div>
+        </div>
+
+    </fieldset>
+</form>

@@ -1,0 +1,47 @@
+<form>
+    <fieldset>
+        <legend>New character</legend>
+
+        <div class="row collapse prefix-radius">
+            <div class="small-3 columns">
+                <span class="prefix">Name</span>
+            </div>
+            <div class="small-9 columns">
+                <input type="text" ng-model="char.name">
+            </div>
+        </div>
+
+        <div class="row collapse prefix-radius">
+            <div class="small-3 columns">
+                <span class="prefix">Race</span>
+            </div>
+            <div class="small-9 columns">
+                <input type="text" ng-model="char.race">
+            </div>
+        </div>
+
+        <div class="row collapse prefix-radius">
+            <div class="small-3 columns">
+                <span class="prefix">Homeworld</span>
+            </div>
+            <div class="small-9 columns">
+                <input type="text" ng-model="char.homeworld">
+            </div>
+        </div>
+
+        <div class="row collapse prefix-radius">
+            <div class="small-3 columns">
+                <span class="prefix">Image URL</span>
+            </div>
+            <div class="small-9 columns">
+                <input type="text" ng-model="char.image_url">
+            </div>
+        </div>
+
+        <a href="#" class="button small right" ng-click="addChar()">Add</a>
+    </div>
+
+    </div>
+
+    </fieldset>
+</form>

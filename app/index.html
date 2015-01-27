@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="charsApp">
+<head>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Char App</title>
+
+    <link rel="stylesheet" href="/bower_components/foundation/css/foundation.css">
+    <link rel="stylesheet" href="/bower_components/ngDialog/css/ngDialog.css">
+    <link rel="stylesheet" href="/bower_components/ngDialog/css/ngDialog-theme-default.css">
+    <link rel="stylesheet" href="/index.css">
+
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-route/angular-route.js"></script>
+    <script src="/bower_components/ngDialog/js/ngDialog.js"></script>
+
+    <script src="/app.js"></script>
+    <script src="/pages/home/chardata.service.js"></script>
+    <script src="/pages/home/browse.controller.js"></script>
+    <script src="/pages/home/addchar.controller.js"></script>
+</head>
+<body>
+    <div class="row">
+        <div class="icon-bar five-up">
+            <a class="item" href="/">
+                <label>Browse</label>
+            </a>
+            <a class="item" href="/addchar">
+                <label>Add New</label>
+            </a>
+        </div>
+        <div class="large-12 columns" ng-view></div>
+    </div>
+</body>
+</html>
